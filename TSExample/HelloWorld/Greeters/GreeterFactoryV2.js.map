@@ -1,0 +1,1 @@
+{"version":3,"file":"GreeterFactoryV2.js","sourceRoot":"","sources":["GreeterFactoryV2.ts"],"names":[],"mappings":"AAAA;IACI;;;;;OAKG;IACH,0BAAoB,iBAAqC;QAArC,sBAAiB,GAAjB,iBAAiB,CAAoB;IAAI,CAAC;IAE9D,wCAAa,GAAb,UAAc,SAAiB;QAC3B,MAAM,CAAC,IAAI,CAAC,iBAAiB,CAAC,SAAS,CAAC,IAAI,IAAI,CAAC,iBAAiB,CAAC,IAAI,CAAC,CAAC;IAC7E,CAAC;IACL,uBAAC;AAAD,CAAC,AAZD,IAYC"}

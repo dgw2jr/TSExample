@@ -1,0 +1,19 @@
+﻿{
+  "Framework": "jasmine",
+  "RootReferencePathMode": "SettingsFileDirectory",
+  "Compile": {
+    "Mode": "External",
+    "Extensions": [ ".ts" ],
+    "ExtensionsWithNoOutput": [ ".d.ts" ]
+  },
+  "References": [
+    { "Include": "*.ts", "Excludes": ["*.test.ts"] },
+    {
+      "Path": "Scripts/typings/jasmine/jasmine.d.ts",
+      "IsTestFrameworkFile": true
+    }
+  ],
+  "Tests": [
+    { "Include": "*.test.ts" }
+  ]
+}
