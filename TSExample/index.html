@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-messages.min.js"></script>
+    <script src="Culture/validation/configurations/address/addressValidationConfiguration.js"></script>
+    <script src="Culture/TestController.js"></script>
+    <script src="Culture/validate.directive.js"></script>
+    <script src="Culture/address.directive.js"></script>
+    <script src="app.js"></script>
+</head>
+<body ng-app="app">
+    <div ng-controller="TestController">
+        <form name="myForm">
+            <select ng-model="culture" ng-options="c for c in cultures"></select>
+            <mailing-address ng-model="addresses.mailing" culture="{{culture}}"></mailing-address>
+            <street-address ng-model="address.street" culture="{{culture}}"></street-address>
+        </form>
+    </div>
+</body>
+</html>

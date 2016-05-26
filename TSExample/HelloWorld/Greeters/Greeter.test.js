@@ -61,13 +61,13 @@ var Tests;
             expect(result).toBe('Sup yo!');
         });
     });
-    describe('SaysHello:', function () {
+    describe('Person:', function () {
         var cultureMap = new CultureGreeterMap();
         var factory = new GreeterFactoryV2(cultureMap);
         it('should say hello', function () {
             var cultures = ['us', 'de', 'notexists'];
             cultures.forEach(function (culture) {
-                var sut = new SaysHello(culture, factory);
+                var sut = new PersonBuilder(factory).withCulture(culture).build();
                 expect(sut.sayHello()).toBe(factory.getForCulture(culture).greet());
             });
         });

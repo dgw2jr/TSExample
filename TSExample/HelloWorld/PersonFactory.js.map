@@ -1,0 +1,1 @@
+{"version":3,"file":"PersonFactory.js","sourceRoot":"","sources":["PersonFactory.ts"],"names":[],"mappings":"AAAA;IACI,uBAAoB,cAA+B;QAA/B,mBAAc,GAAd,cAAc,CAAiB;IAAG,CAAC;IAEvD,2CAAmB,GAAnB,UAAoB,SAAiB;QACjC,MAAM,CAAC,IAAI,MAAM,CAAC,SAAS,EAAE,IAAI,CAAC,cAAc,CAAC,CAAC;IACtD,CAAC;IACL,oBAAC;AAAD,CAAC,AAND,IAMC"}

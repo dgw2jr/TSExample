@@ -1,0 +1,21 @@
+﻿<ng-form name="address">
+    <div>
+        <label>Postal Code</label>
+        <validate name='postalCode' ng-model='vm.ngModel.postalCode' config="vm.validatableObject['postalCode'][vm.culture]"></validate>
+        <span ng-messages="address.postalCode.$error" ng-show="address.postalCode.$touched">
+            <span ng-message="maxlength">Too long!</span>
+            <span ng-message="required">Required!</span>
+            <span ng-message="pattern">Wrong format!</span>
+        </span>
+    </div>
+
+    <div>
+        <label>City</label>
+        <validate name='city' ng-model='vm.ngModel.city' config="vm.validatableObject['city'][vm.culture]"></validate>
+        <span ng-messages="address.city.$error" ng-show="address.city.$touched">
+            <span ng-message="maxlength">Too long!</span>
+            <span ng-message="required">Required!</span>
+            <span ng-message="pattern">Wrong format!</span>
+        </span>
+    </div>
+</ng-form>
