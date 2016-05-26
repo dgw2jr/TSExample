@@ -14,7 +14,7 @@
             templateUrl: `culture/address.html`
         }
     }
-
+    
     export function streetAddress(): ng.IDirective {
         return {
             restrict: 'E',
@@ -41,17 +41,24 @@ namespace Controllers {
     }
 
     export class MailingAddressController {
-        static $inject = ['addressValidationConfiguration'];
-        constructor(private validatableObject: Validation.IValidatableObject) {}
-        
+        static $inject = ['mailingAddressValidatableObject'];
+        constructor(private validatableObject: Validation.IValidatableObject) { }
+
         culture = 'us';
         ngModel: IAddress;
     }
 
     export class StreetAddressController {
-        static $inject = ['addressValidationConfiguration'];
+        static $inject = ['streetAddressValidatableObject'];
         constructor(private validatableObject: Validation.IValidatableObject) { }
-        
+
+        culture = 'us';
+        ngModel: IAddress;
+    }
+
+    export class AddressController {
+        constructor(protected  validatableObject: Validation.IValidatableObject) {}
+
         culture = 'us';
         ngModel: IAddress;
     }

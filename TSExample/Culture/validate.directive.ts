@@ -13,7 +13,7 @@
                         ng-pattern='vm.config.pattern'
                         ng-maxlength='vm.config.maxLength'
                         ng-required='vm.config.required'
-                        placeholder='{{vm.config.patternDisplay}}' />`,
+                        placeholder='{{vm.config.placeholder}}' />`,
             replace: true
         }
     }

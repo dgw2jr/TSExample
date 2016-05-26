@@ -1,5 +1,15 @@
 ﻿<ng-form name="address">
     <div>
+        <label>Address Line 1</label>
+        <validate name='line1' ng-model='vm.ngModel.line1' config="vm.validatableObject['line1'][vm.culture]"></validate>
+        <span ng-messages="address.line1.$error" ng-show="address.line1.$touched">
+            <span ng-message="maxlength">Too long!</span>
+            <span ng-message="required">Required!</span>
+            <span ng-message="pattern">{{vm.validatableObject['line1'][vm.culture].patternMessage}}</span>
+        </span>
+    </div>
+
+    <div>
         <label>Postal Code</label>
         <validate name='postalCode' ng-model='vm.ngModel.postalCode' config="vm.validatableObject['postalCode'][vm.culture]"></validate>
         <span ng-messages="address.postalCode.$error" ng-show="address.postalCode.$touched">

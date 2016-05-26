@@ -4,6 +4,7 @@ module Validation {
         minLength: number;
         required: boolean;
         pattern?: RegExp;
-        patternDisplay?: string;
+        patternMessage?: string;
+        placeholder?: string;
     }
 }

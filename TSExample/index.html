@@ -15,8 +15,14 @@
 <body ng-app="app">
     <div ng-controller="TestController">
         <form name="myForm">
-            <select ng-model="culture" ng-options="c for c in cultures"></select>
+            <div>
+                Culture: <select ng-model="culture" ng-options="c for c in cultures"></select>
+            </div>
+
+            Mailing:
             <mailing-address ng-model="addresses.mailing" culture="{{culture}}"></mailing-address>
+
+            Street:
             <street-address ng-model="address.street" culture="{{culture}}"></street-address>
         </form>
     </div>

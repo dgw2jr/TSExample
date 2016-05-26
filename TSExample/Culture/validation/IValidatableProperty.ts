@@ -1,5 +1,5 @@
 module Validation {
-    export interface IValidatableProperty {
+    export interface IValidatablePropertyDictionary {
         [name: string]: IValidationConfiguration;
     }
 }

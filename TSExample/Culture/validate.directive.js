@@ -10,7 +10,7 @@ var Directives;
             scope: {
                 config: '<'
             },
-            template: "<input type='text' \n                        ng-pattern='vm.config.pattern'\n                        ng-maxlength='vm.config.maxLength'\n                        ng-required='vm.config.required'\n                        placeholder='{{vm.config.patternDisplay}}' />",
+            template: "<input type='text' \n                        ng-pattern='vm.config.pattern'\n                        ng-maxlength='vm.config.maxLength'\n                        ng-required='vm.config.required'\n                        placeholder='{{vm.config.placeholder}}' />",
             replace: true
         };
     }

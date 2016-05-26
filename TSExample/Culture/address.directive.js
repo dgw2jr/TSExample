@@ -40,7 +40,7 @@ var Controllers;
             this.validatableObject = validatableObject;
             this.culture = 'us';
         }
-        MailingAddressController.$inject = ['addressValidationConfiguration'];
+        MailingAddressController.$inject = ['mailingAddressValidatableObject'];
         return MailingAddressController;
     }());
     Controllers.MailingAddressController = MailingAddressController;
@@ -49,9 +49,17 @@ var Controllers;
             this.validatableObject = validatableObject;
             this.culture = 'us';
         }
-        StreetAddressController.$inject = ['addressValidationConfiguration'];
+        StreetAddressController.$inject = ['streetAddressValidatableObject'];
         return StreetAddressController;
     }());
     Controllers.StreetAddressController = StreetAddressController;
+    var AddressController = (function () {
+        function AddressController(validatableObject) {
+            this.validatableObject = validatableObject;
+            this.culture = 'us';
+        }
+        return AddressController;
+    }());
+    Controllers.AddressController = AddressController;
 })(Controllers || (Controllers = {}));
 //# sourceMappingURL=address.directive.js.map
