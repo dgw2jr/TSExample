@@ -78,6 +78,7 @@ namespace Validation.Configurations.PostalCode {
             minLength: usPostalCode.minLength,
             pattern: /5[0-2]([0-7][0-9][1-9]|80[0-9])/,
             placeholder: '50001 to 52809',
+            formatter: usPostalCode.formatter,
             messages: usPostalCode.messages
         }
     }
