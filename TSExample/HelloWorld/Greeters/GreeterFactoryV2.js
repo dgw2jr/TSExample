@@ -1,10 +1,4 @@
 var GreeterFactoryV2 = (function () {
-    /*
-        Now I realize maybe we will have more than two greeters to select from some day and
-        I'd like to avoid adding an if statement to my factory every time that requirement changes.
-        If there were 20 greeters to choose from the cyclomatic complexity of our method could
-        grow beyond the threshold set in our tools that check for excessive complexity.
-     */
     function GreeterFactoryV2(cultureGreeterMap) {
         this.cultureGreeterMap = cultureGreeterMap;
     }
@@ -13,4 +7,4 @@ var GreeterFactoryV2 = (function () {
     };
     return GreeterFactoryV2;
 }());
-//# sourceMappingURL=GreeterFactoryV2.js.map
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiR3JlZXRlckZhY3RvcnlWMi5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkdyZWV0ZXJGYWN0b3J5VjIudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFPSSwwQkFBb0IsaUJBQXFDO1FBQXJDLHNCQUFpQixHQUFqQixpQkFBaUIsQ0FBb0I7SUFBSSxDQUFDO0lBRTlELHdDQUFhLEdBQWIsVUFBYyxTQUFpQjtRQUMzQixNQUFNLENBQUMsSUFBSSxDQUFDLGlCQUFpQixDQUFDLFNBQVMsQ0FBQyxJQUFJLElBQUksQ0FBQyxpQkFBaUIsQ0FBQyxJQUFJLENBQUMsQ0FBQztJQUM3RSxDQUFDO0lBQ0wsdUJBQUM7QUFBRCxDQUFDLEFBWkQsSUFZQyJ9

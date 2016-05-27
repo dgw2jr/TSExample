@@ -3,9 +3,10 @@
         <label>Address Line 1</label>
         <validate name='line1' ng-model='vm.ngModel.line1' config="vm.validatableObject['line1'][vm.culture]"></validate>
         <span ng-messages="address.line1.$error" ng-show="address.line1.$touched">
-            <span ng-message="maxlength">Too long!</span>
-            <span ng-message="required">Required!</span>
-            <span ng-message="pattern">{{vm.validatableObject['line1'][vm.culture].patternMessage}}</span>
+            <span ng-message="maxlength">{{vm.validatableObject['line1'][vm.culture].messages.maxLength}}</span>
+            <span ng-message="minlength">{{vm.validatableObject['line1'][vm.culture].messages.minLength}}</span>
+            <span ng-message="required">{{vm.validatableObject['line1'][vm.culture].messages.required}}</span>
+            <span ng-message="pattern">{{vm.validatableObject['line1'][vm.culture].messages.pattern}}</span>
         </span>
     </div>
 
@@ -13,9 +14,10 @@
         <label>Postal Code</label>
         <validate name='postalCode' ng-model='vm.ngModel.postalCode' config="vm.validatableObject['postalCode'][vm.culture]"></validate>
         <span ng-messages="address.postalCode.$error" ng-show="address.postalCode.$touched">
-            <span ng-message="maxlength">Too long!</span>
-            <span ng-message="required">Required!</span>
-            <span ng-message="pattern">Wrong format!</span>
+            <span ng-message="maxlength">{{vm.validatableObject['postalCode'][vm.culture].messages.maxLength}}</span>
+            <span ng-message="minlength">{{vm.validatableObject['postalCode'][vm.culture].messages.minLength}}</span>
+            <span ng-message="required">{{vm.validatableObject['postalCode'][vm.culture].messages.required}}</span>
+            <span ng-message="pattern">{{vm.validatableObject['postalCode'][vm.culture].messages.pattern}}</span>
         </span>
     </div>
 
@@ -23,9 +25,10 @@
         <label>City</label>
         <validate name='city' ng-model='vm.ngModel.city' config="vm.validatableObject['city'][vm.culture]"></validate>
         <span ng-messages="address.city.$error" ng-show="address.city.$touched">
-            <span ng-message="maxlength">Too long!</span>
-            <span ng-message="required">Required!</span>
-            <span ng-message="pattern">Wrong format!</span>
+            <span ng-message="maxlength">{{vm.validatableObject['city'][vm.culture].messages.maxLength}}</span>
+            <span ng-message="minlength">{{vm.validatableObject['city'][vm.culture].messages.minLength}}</span>
+            <span ng-message="required">{{vm.validatableObject['city'][vm.culture].messages.required}}</span>
+            <span ng-message="pattern">{{vm.validatableObject['city'][vm.culture].messages.pattern}}</span>
         </span>
     </div>
 </ng-form>

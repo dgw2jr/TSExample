@@ -6,5 +6,14 @@ module Validation {
         pattern?: RegExp;
         patternMessage?: string;
         placeholder?: string;
+        formatter?: (value) => void;
+        messages?: IValidationMessages;
+    }
+    
+    export interface IValidationMessages {
+        maxLength?: string;
+        minLength?: string;
+        required?: string;
+        pattern?: string;
     }
 }

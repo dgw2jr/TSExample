@@ -243,3 +243,10 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+*.js
+
+*.js
+
+*.js
+
+*.js

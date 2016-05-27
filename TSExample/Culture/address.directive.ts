@@ -55,11 +55,4 @@ namespace Controllers {
         culture = 'us';
         ngModel: IAddress;
     }
-
-    export class AddressController {
-        constructor(protected  validatableObject: Validation.IValidatableObject) {}
-
-        culture = 'us';
-        ngModel: IAddress;
-    }
 }
