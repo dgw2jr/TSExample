@@ -1,0 +1,52 @@
+﻿<md-toolbar>
+    <div class="md-toolbar-tools">{{vm.title}}</div>
+</md-toolbar>
+<md-tabs md-selected="vm.selectedIndex">
+    <md-tab>
+        <md-tab-label>
+            Operation
+        </md-tab-label>
+        <md-tab-body>
+            <md-content layout-padding layout="column" layout-align="center center">
+                <div layout="column" layout-align="center end">
+                    <ng-form name="vm.createOperationForm">
+                        <md-input-container>
+                            <label>Operation Name</label>
+                            <input name="operationName" type="text" ng-model="vm.operation.name" ng-required="true" />
+                            <div ng-messages="vm.createOperationForm.operationName.$error">
+                                <div ng-message="required">Required</div>
+                            </div>
+                        </md-input-container>
+                    </ng-form>
+                    <div layout-align="center end">
+                        <md-button class="md-primary md-raised"
+                                   ng-disabled="vm.createOperationForm.$invalid"
+                                   ng-click="vm.selectedIndex = vm.selectedIndex + 1">
+                            Next >
+                        </md-button>
+                    </div>
+                </div>
+            </md-content>
+        </md-tab-body>
+    </md-tab>
+    <md-tab>
+        <md-tab-label>
+            Add contact
+        </md-tab-label>
+        <md-tab-body>
+            <md-content layout-padding layout="column" layout-align="center center">
+                This individual will be the primary contact and decision maker for this operation
+            </md-content>
+        </md-tab-body>
+    </md-tab>
+    <md-tab>
+        <md-tab-label>
+            Add partner
+        </md-tab-label>
+        <md-tab-body>
+            <md-content layout-padding layout="column" layout-align="center center">
+                test
+            </md-content>
+        </md-tab-body>
+    </md-tab>
+</md-tabs>
